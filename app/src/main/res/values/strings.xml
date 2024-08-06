@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Filters</string>
+    <string name="app_version" translatable="false">1.0.0</string>
+    <string name="app_code" translatable="false">1</string>
+    <string name="share" translatable="false">Share</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="attribute_url_filter" translatable="false">https://www.pexels.com/photo/brown-mountains-2559941/</string>
+</resources>

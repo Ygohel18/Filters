@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shimmer_auto_start="true"
+        app:shimmer_duration="1500">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:focusable="true"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/filter_image_view"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="Filter Preview"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_filters"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.card.MaterialCardView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <TextView
+        android:id="@+id/filter_title"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

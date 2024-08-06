@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/photoEditorImage"
+        layout="@layout/holder_square_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/filterOnboardTitle"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photoEditorImage"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Transform Your Photos"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/filterOnboardCaption"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterOnboardTitle"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Explore over 50 stunning filters to make every moment magical."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/filterGalleryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterOnboardCaption"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="16dp"
+        android:text="Gallery"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/round_image_24"
+        app:iconGravity="textStart"
+        app:iconSize="24dp"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/filterCameraBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterGalleryBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="@color/white"
+        android:padding="16dp"
+        android:text="Camera"
+        android:textColor="@color/colorPrimary"
+        app:cornerRadius="16dp"
+        app:icon="@drawable/round_camera_alt_24"
+        app:iconGravity="textStart"
+        app:iconTint="@color/colorPrimary"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
